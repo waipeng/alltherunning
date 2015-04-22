@@ -1,12 +1,12 @@
 # Site settings
 title: alltherunning
-email: your-email@domain.com
+email: 
 description: > # this means to ignore newlines until "baseurl:"
-  "Now, here, you see, it takes all the running you can do, to keep in the same place"
+    "Now, here, you see, it takes all the running you can do, to keep in the same place" - Red Queen
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://alltherunning.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: waipeng
+github_username:  waipeng
 
 # Build settings
 markdown: kramdown
