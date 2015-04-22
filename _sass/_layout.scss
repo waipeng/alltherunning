@@ -23,6 +23,13 @@
     }
 }
 
+.site-description {
+    margin-top: 15px ;
+    color: grey;
+    font-style: italic;
+    width: -webkit-calc(65% - (#{$spacing-unit} / 2));
+}
+
 .site-nav {
     float: right;
     line-height: 56px;
