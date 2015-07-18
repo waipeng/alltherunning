@@ -3,7 +3,7 @@ layout: post
 title:  Benchmarking NeCTAR Cloud
 categories: NeCTAR
 ---
-NeCTAR is made up of 8 nodes around Australia. Each node has quite a bit of discretion in choosing hardware and technologies to support their implementation of OpenStack. For example, Pawsey and Tasmania are both using Ceph as their cinder backend, whereas Melbourne is using a NetApp cluster for the same. As a result, it can be expected that performance will vary across the different node.
+NeCTAR is made up of 8 nodes around Australia. Each node has quite a bit of discretion in choosing hardware and technologies to support their implementation of OpenStack. For example, Pawsey and Tasmania are both using Ceph as their cinder backend, whereas Melbourne is using a NetApp cluster for the same. As a result, it can be expected that performance will vary across the different nodes.
 
 I was quite interested to figure out what the differences across the node are, and finally got down to benchmarking the cloud tonight. The benchmarks were done as follow:
 
