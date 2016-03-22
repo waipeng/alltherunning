@@ -13,11 +13,11 @@ commit message (no changed files). The error message was like:
 
 To solve this, push with the `--no-thin` option
 
-    # git push --no-thin gerrit HEAD:refs/publish/master                    
+    # git push --no-thin gerrit HEAD:refs/publish/master
     Counting objects: 5, done.
     Delta compression using up to 2 threads.
     Compressing objects: 100% (5/5), done.
     Writing objects: 100% (5/5), 3.42 KiB | 0 bytes/s, done.
     Total 5 (delta 0), reused 0 (delta 0)
-    remote: Processing changes: updated: 1, refs: 1, done    
+    remote: Processing changes: updated: 1, refs: 1, done
     remote: (W) e98f57f: no files changed, message updated
