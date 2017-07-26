@@ -1,0 +1,80 @@
+://keybase.io/waipeng
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://blog.alltherunning.com
+  * I am waipeng (https://keybase.io/waipeng) on keybase.
+  * I have a public key with fingerprint 598A 34E6 B4DB 26F2 9D50  8B57 EF93 519B 4D47 1B25
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01018f141543bf817148bacabdb578010804ff4f7ffa977373d600acd3a4bb15ccdb0a",
+      "fingerprint": "598a34e6b4db26f29d508b57ef93519b4d471b25",
+      "host": "keybase.io",
+      "key_id": "ef93519b4d471b25",
+      "kid": "01018f141543bf817148bacabdb578010804ff4f7ffa977373d600acd3a4bb15ccdb0a",
+      "uid": "c7d71175fd46c7182fcb307152b3e919",
+      "username": "waipeng"
+    },
+    "merkle_root": {
+      "ctime": 1501047068,
+      "hash_meta": "dc5454bd629f736f6a7a9703d66da37f9dc265933b18e2a44e9f78d467495610",
+      "seqno": 1281044
+    },
+    "revoke": {
+      "sig_ids": [
+        "e2f2945ea21c94eac0c7006bbbea9e5db16e6cabee55f18d67d330788e820dba0f"
+      ]
+    },
+    "service": {
+      "hostname": "blog.alltherunning.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1501047102,
+  "expire_in": 157680000,
+  "prev": "dd0ab509f5a6b016e481ea38a0486804a8ce6c4c426466835e22f5f9be246d30",
+  "seqno": 13,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.73
+Comment: https://keybase.io/crypto
+
+yMK9AnicrVNraBxFHL/EmmrUGiUgCm3s2uIrxJndee0JERIl1pBYI4Ia23Nm5z93
+Sy67193NtaGJVEQp1pi2KhZqLT6wKGhEfIuNpv0gKBpEQ4OCeIoKftBaBYVSnT0q
+KPjR+bLM7O//ew1z9LwzCu0tr9z3x92bn56Zaflw4Z6Jwh3bruzd7qhYTzrF7c4Y
+ND9Q1ZBmpbFQO0UHYYSFwQRT4ikjMMdEKBlIpRXlwv4ViBhDDDdG+px73NMMIRlo
+TxKlMA0CrZB0uh0TRmVIakkYZZaW+kJ6BJgiWrnMuL6mSFhGML5HsW+PCcfKpXaw
+Eqf5hDWnZAo9YWzP7KbUtPcf+P/Z90STLuCaY8yp0YQFHAvXBMpDHFNXeeBjPwem
+kERyHCx6qwxrEJWd6W5nHJKxKpSSOM7yboMszBGYWgeEIyZsPplWSuOQSTuoA0oo
+UZq5vuEeM0xy6w5Zb0xLjxtfBy6jvucpLMCVhIDFCeuJE58yjKyNFLZEsVVwhVUg
+1kEC9XgMcvE0LNvWUqc46oBrOycUpIsDn4AMUMARYkopkD5QrTADZtsCoNRgoRnX
+ns0rBAgXaSWRcTZN52JJPQya5Pk1nY6vqnG5R1arWQWSiSiyF98TxOPWWy2JsziI
+qxZTybJaMS8om6w1KwNVOs1WUmGk7ZAdqEOShnFk41jkv7vDyO12YFstTKAU5gjK
+mUB25TJQz8vUSCqKfEMlU8gGIgKD9IRERFgokSKwGUlAXEYYEx4F1zXU+ApcwrT3
+zzI961OWLaetMJLZRALO9MJ7d60otLQX2s5szZ9Rof3sjr8f1x6y8k9z6IL186dW
+DaYLey6+/ZkVswcXjq3j70/3e/F3bRuCta1DP/AnT6ztYkvXD2yc+uSSoece23vn
+I5tHhpd3H6lkyeSRavvs8sPn6vqOW9+Zu+iEc+FT5d6pjY3ZznWDm1b/+PKp8e+7
+Z5899OjQtbs/Pzqy9O6uY4M7j8+r4mejv0XzAx/Vfxq5/MXGhqt7i6vfnuu//6tV
+Hxx4/I3R54eP/37+yssO1reuCclAUpmrmJPnNE629C2+8NK+j8+SN3+a/jrf2HLN
+jvUzHQ82uq57c+8DO2e6Wm8cvvfSw/D6bVNXdA6s6exYavT3TbrfPvTqrluuOnxT
+Wlz2Dkz/8kTfvv1ffv3NDT/3vPbW4mLhC9H2FwN/gEY=
+=Nawb
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/waipeng
+
+==================================================================
