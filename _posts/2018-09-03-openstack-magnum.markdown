@@ -1,11 +1,14 @@
 ---
 layout: post
-title:  OpenStack Magnum available in Nectar
+title:  Containers now available on Nectar!
 categories: nectar openstack
 ---
 
 We've just deploy OpenStack Magnum (Container Infrastructure as a Service) on
-Nectar cloud. We are in the process of coming out with official documentation,
+Nectar cloud. This allows a user to spin up a container cluster (kubernetes or
+docker swarm) on Nectar.
+
+We are in the process of coming out with official documentation,
 but in the meantime if you would like to test drive it, here are the steps to do
 so.
 
@@ -20,7 +23,10 @@ First of all, you need the following
 not, [request for floating ip
 quota](https://support.ehelp.edu.au/solution/articles/6000170753-private-networks#requesting_quota).
 
-1. Install python-magnumclient
+
+# Creating a Cluster #
+
+1. Install python-magnumclient. You need python-magnumclient >= 2.9.0
    ```
    pip install python-magnumclient
    ```
@@ -39,14 +45,41 @@ quota](https://support.ehelp.edu.au/solution/articles/6000170753-private-network
    --keypair <mykey> mycluster
    ```
 
+# Operating your Cluster #
+
+1. [Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+
+1. Set up the credentials to connect to the cluster. Firstly, create an config
+   dir
+   ```
+   mkdir ~/kubernetes/
+   cd ~/kubernetes/
+   ```
+
+1. Create the config files
+   ```
+   openstack coe cluster config mycluster
+   ```
+
+1. Set the ENV by copying the output from the previous command
+   ```
+   export KUBECONFIG=$HOME/kubernetes/config
+   ```
+
+1. Use kubectl to connect to it
+   ```
+   kubectl get all
+   ```
+
+
 Please send feedback!
 
 # Tips #
 
 ### Availability Zone ###
 
-You can boot in an availability zone by doing the following
+You can boot in an availability zone by using `--labels`. E.g.
 ```
 openstack coe cluster create --cluster-template mytemplate \
---keypair <mykey> --labels availability-zone <AZ> mycluster
+--keypair <mykey> --labels availability_zone <AZ> mycluster
 ```
