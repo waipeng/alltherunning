@@ -24,7 +24,7 @@ will rollback the whole upload. This is a HTTP PUT call that failed:
 ```
 p1-rcs-qh2 proxy-server <14>2018-01-09T04:30:02.064113+11:00 p1-rcs-qh2
 proxy-server: XXX.XXX.XXX.XXX 127.0.0.1 08/Jan/2018/17/30/02 PUT
-/v1/AUTH_X/images/910d0b24-cc93-4330-8320-edc68fa26692-00019 HTTP/1.0 500 -
+/v1/AUTH_3/images/910d0b24-cc93-4330-8320-edc68fa26692-00019 HTTP/1.0 500 -
 python-swiftclient-3.1.0 gAAAAABaU6md7mxb... 204800000 125 -
 txcd773598661349caa17b1-005a53aa87 - 18.6902 - - 1515432583.373755932
 1515432602.063934088 0
@@ -81,10 +81,10 @@ swift-get-nodes [-a] <ring.gz> <account> [<container> [<object>]]
 For example, this is a HTTP call that was failing:
 
 ```
-PUT /v1/AUTH_XXX/images/910d0b24-cc93-4330-8320-edc68fa26692-00019
+PUT /v1/AUTH_3/images/910d0b24-cc93-4330-8320-edc68fa26692-00019
 ```
 
-- `XXX` is the account
+- `AUTH_3` is the account
 - `images` is the container
 - `910d0b24-cc93-4330-8320-edc68fa26692-00019` is the object.
 
