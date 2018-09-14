@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Containers now available on Nectar!
+title: Kubernetes now available on Nectar!
 categories: nectar openstack
 ---
 
