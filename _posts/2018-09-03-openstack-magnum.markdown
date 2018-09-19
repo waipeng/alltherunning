@@ -23,9 +23,27 @@ First of all, you need the following
 not, [request for floating ip
 quota](https://support.ehelp.edu.au/solution/articles/6000170753-private-networks#requesting_quota).
 
-
 # Creating a Cluster #
+You can create a cluster using either the Dashboard or CLI tools.
 
+## Using Dashboard ##
+1. Log on to the [BETA dashboard](https://dashboard-next.rc.nectar.org.au)
+
+1. Navigate to **Container Infra**.
+
+1. Click on **Clusters**, then **Create Cluster**.
+
+1. Give your cluster a name.
+
+1. Choose a cluster template. We have pre-defined global templates (in format
+   *kubernetes-{az}*) to help you get started easier. Choose the template that you
+want your cluster to be in.
+
+1. Go to the **Misc** tab, and select your **Keypair**.
+
+1. Click **Submit**.
+
+## Using CLI ##
 1. Install python-magnumclient. You need python-magnumclient >= 2.9.0
    ```
    pip install python-magnumclient
@@ -46,6 +64,9 @@ quota](https://support.ehelp.edu.au/solution/articles/6000170753-private-network
    ```
 
 # Operating your Cluster #
+
+Once your cluster is up (NOTE: It takes about 20 mins for a cluster to build),
+you can control it using *kubectl*.
 
 1. [Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 
@@ -78,7 +99,7 @@ Please send feedback!
 
 ### Availability Zone ###
 
-You can boot in an availability zone by using `--labels`. E.g.
+You can boot in a different availability zone by using `--labels`. E.g.
 ```
 openstack coe cluster create --cluster-template mytemplate \
 --keypair <mykey> --labels availability_zone <AZ> mycluster
