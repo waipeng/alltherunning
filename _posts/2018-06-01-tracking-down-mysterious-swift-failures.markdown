@@ -100,7 +100,7 @@ meant running `swift-get-nodes` with random filenames until we got what wanted.
 Success! By that I mean we had a failure. A closer look each of the 3 copies of the
 data did show that they were different. Diffing them, it was immediately obvious.
 
-![Image Diff]({{ "/assets/2018-06-01-hex.png" | absolute_url }})
+![Image Diff]({{ "/assets/posts/2018-06-01/hex.png" | absolute_url }})
 
 Fuzzing that image, we managed to reduce it to the following contents that will
 throw an error. Below is a comparision of the same object on 3 servers
