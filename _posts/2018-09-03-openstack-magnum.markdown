@@ -63,7 +63,7 @@ want your cluster to be in.
    --keypair <mykey> mycluster
    ```
 
-# Operating your Cluster #
+# Operating your Cluster using CLI #
 
 Once your cluster is up (NOTE: It takes about 20 mins for a cluster to build),
 you can control it using *kubectl*.
@@ -92,6 +92,43 @@ you can control it using *kubectl*.
    kubectl get all
    ```
 
+1. You can now use `kubectl` to run your images. If you are familiar with
+   `docker`, this [kubernetes
+document](https://kubernetes.io/docs/reference/kubectl/docker-cli-to-kubectl/)
+lists the equivalent commands in `kubectl`.
+
+# Operating your Cluster using web interface #
+
+Alternatively, you can also administer it from the web.
+
+1. Set up a role for the service account
+   ```
+   kubectl create clusterrolebinding kubernetes-dashboard --clusterrole=cluster-admin --serviceaccount=kube-system:kubernetes-dashboard
+   ```
+
+1. List the secrets
+   ```
+   kubectl -n kube-system get secret
+   ```
+
+1. Get the secret token. It will be in format `kubernetes-dashboard-token-XXXXX`
+   ```
+   kubectl -n kube-system describe secret kubernetes-dashboard-token-XXXXX
+   ```
+
+1. Copy the token
+
+1. Start the web interface
+   ```
+   kubectl proxy
+   ```
+
+1. In your browser, go to the following URL
+   ```
+   http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login
+   ```
+
+1. Use your token to log in
 
 Please send feedback!
 
