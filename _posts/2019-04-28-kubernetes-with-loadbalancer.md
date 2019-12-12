@@ -71,6 +71,19 @@ from, it still is able to make the way to your VM on Nectar Cloud.
    
 1. You should be able to browse to `http://<ip>` and see the nginx welcome page.
 
+1. If this doesn't work, you might not have the correct security groups applied.
+   Find the port the IP is on:
+   ```
+   openstack floating ip list --floating-ip-address 103.6.252.52 -c Port -f value
+   ```
+   Apply a security group that has the HTTP security group rule to it, or, if do
+not already have one create it.
+   ```
+   openstack security group create http
+   openstack security group rule create --ingress --dst-port 80 http
+   openstack port set --security-group http fe008711-7469-4c44-8489-46abbc8b1774
+   ```
+
 1. This is an external load balancer (external to kubernetes), and is created in
    Neutron. You can see the loadbalancer in Neutron by doing
    ```
