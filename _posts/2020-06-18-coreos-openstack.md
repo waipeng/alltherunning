@@ -45,7 +45,7 @@ openstack keypair show --public-key <NAME>
 
 1. Boot up using CLI
 ```
-openstack server boot --image fedora-coreos-31 --flavor m3.small \
+openstack server create --image fedora-coreos-31 --flavor m3.small \
 --user-data user_data.json fedora-coreos-instance
 ```
 
